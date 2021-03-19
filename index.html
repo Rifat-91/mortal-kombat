@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Mortal Kombat</title>
+</head>
+
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="video/video.mp4" type="video/mp4">
+  </video>
+  <div class="app" id="app">
+    <header class="header">
+      <a href="#" class="user">
+        <img src="../images/header/logo.svg" alt="КиноПульс" class="logo-img">
+      </a>
+      <!-- /.user -->
+      <a href="#" class="user">
+        <span class="user-name">Рифат</span>
+        <!-- /.user-name -->
+        <img src="../images/header/avatar.jpg" alt="Аватар" class="user-photo"></a>
+      <!-- /.user -->
+    </header>
+    <!-- /.header -->
+    <section class="film">
+      <img src="../images/main/film-logo.jpg" alt="Mortal Kombat" class="film-logo">
+      <div class="tags">
+        <span class="date">2021</span>
+        <span class="genre">боевик, фэнтези, фантастика</span>
+        <span class="country">США</span>
+        <span class="age">18+</span>
+      </div>
+      <!-- /.tags -->
+      <div class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где
+        останется только сильнейший</div>
+      <!-- /.description -->
+      <div class="button-wrap">
+        <a data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;"
+          class="button button-primary">Предзаказ
+          фильма</a>
+        <!-- /.button -->
+        <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-default">
+          <img src="../images/main/play.svg" alt="Play" class="button-img">
+          <span class="button-text">Смотреть трейлер</span>
+        </a>
+        <!-- /.button -->
+      </div>
+      <!-- /.button-wrap -->
+    </section>
+    <!-- /.film -->
+    <div style="display: none;max-width:600px;" id="trueModal" class="trueModal">
+      <img src="../images/main/film-logo.jpg" alt="Mortal Kombat" class="film-logo">
+      <div class="email">
+        <span class="email-text">Введите ваш Email</span> <input type="email" placeholder="email@mail.ru"
+          class="email-input">
+      </div>
+      <!-- /.email -->
+      <p><button data-fancybox-close class="btn button button-primary">Подписаться</button></p>
+    </div>
+  </div>
+  <!-- /.app -->
+
+  <script src=" https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="scripts/jquery.vide.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+
+</html>
